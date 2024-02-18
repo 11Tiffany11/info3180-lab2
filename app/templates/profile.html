@@ -1,0 +1,57 @@
+<!--620097123-->
+{% extends "base.html" %}
+
+{% block main %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+</head>
+<body>
+ 
+  <section class="header"> 
+  <div class="my-profile">
+    <div class="profile-pic">
+       <img src="{{url_for('static', filename='pp.jpg')}}" class = "pp"/>
+    </div>
+
+    <div class="about">
+      <h1>Tiffany Swaby</h1>
+      <h4> @tiffswaby </h4>
+      <h4> Kingston, Jamaica </h4>
+      <h4> {{ format_date_joined }} </h4>
+    </div>
+
+    <div>
+      <div>
+  </div>
+      <div>
+        <p> I like web designing, coding and graphic designing. I recently started skateboarding <br>and it has been a great hobby so far! I have learned how to do tricks such as ollies, shuv-its, <br> pop shuvits and frontside 180s but my goal for the next coming months is to learn how to do a proper kickflip.</p>
+      </div>
+
+        <div class ="a">
+            <h3>37</h3>
+            <h3>121</h3>
+            <h3>1145</h3>
+        </div>
+
+        <div class ="b">
+            <h5>Posts</h5>
+            <h5>Following</h5>
+            <h5>Followers</h5>
+        </div>
+    </div>
+
+    <div class="follow-button">
+      <a href="#" class="f-btn">Follow</a>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>
+
+{% endblock %}
